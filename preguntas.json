@@ -1,0 +1,54 @@
+[
+  {
+    "categoria": "Arte",
+    "dificultad": "media",
+    "pregunta": "¿Quién pintó la Mona Lisa?",
+    "opciones": [
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Leonardo da Vinci",
+      "Claude Monet"
+    ],
+    "respuesta_correcta": "Leonardo da Vinci"
+  },
+  {
+    "categoria": "Deportes",
+    "dificultad": "media",
+    "pregunta": "¿Cuántos jugadores hay en un equipo de fútbol en el campo?",
+    "opciones": ["10", "11", "12", "9"],
+    "respuesta_correcta": "11"
+  },
+  {
+    "categoria": "Ciencia",
+    "dificultad": "media",
+    "pregunta": "¿Cuál es el planeta más grande del sistema solar?",
+    "opciones": ["Tierra", "Júpiter", "Saturno", "Marte"],
+    "respuesta_correcta": "Júpiter"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "dificultad": "media",
+    "pregunta": "¿En qué serie aparece el personaje Walter White?",
+    "opciones": ["Narcos", "Breaking Bad", "Ozark", "El Patrón del Mal"],
+    "respuesta_correcta": "Breaking Bad"
+  },
+  {
+    "categoria": "Geografia",
+    "dificultad": "media",
+    "pregunta": "¿Cuál es el país más grande del mundo?",
+    "opciones": ["China", "Canadá", "Estados Unidos", "Rusia"],
+    "respuesta_correcta": "Rusia"
+  },
+  {
+    "categoria": "Historia",
+    "dificultad": "media",
+    "pregunta": "¿Quién fue el primer presidente de los Estados Unidos?",
+    "opciones": [
+      "Thomas Jefferson",
+      "Abraham Lincoln",
+      "George Washington",
+      "John Adams"
+    ],
+    "respuesta_correcta": "George Washington"
+  }
+]
