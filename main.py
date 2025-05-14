@@ -2,23 +2,36 @@ import random
 import json
 import time
 
-def comprobarResultado(pregunta, turno, nombre):
-    respuesta = int(input("Ingrese su respuesta: "))
-    while respuesta not in [1,2,3,4]:
-        print("❌ Opción inválida. Por favor, seleccioná un número dentro de las opciones.\n")
+def comprobarResultado(pregunta, turno, nombre, rachaJugador, rachaComputadora):
+    if turno == nombre:
+        respuesta = int(input("Ingrese su respuesta: "))
+        while respuesta not in [1,2,3,4]:
+            print("❌ Opción inválida. Por favor, seleccioná un número dentro de las opciones.\n")
+    else:
+        respuesta = random.randint(1, 4)
+            
     opcionSeleccionada = pregunta["opciones"][respuesta - 1]
     
     if opcionSeleccionada == pregunta["respuesta_correcta"]:
         print("¡Correcto! ✔️")
         print(f"🧠 La respuesta era: {pregunta["respuesta_correcta"]}")
-        return turno
+        if turno == nombre:
+            rachaJugador += 1
+            rachaComputadora = 0
+        else:
+            rachaComputadora += 1
+            rachaJugador = 0
+        return turno, True
     else:
         print("❌ ¡Incorrecto! ")
         print(f"🧠 La respuesta era: {pregunta["respuesta_correcta"]}")
-        if turno == nombre:
-            return "Computadora"
+        rachaJugador = 0
+        rachaComputadora = 0
+        if turno == "Computadora":
+            nuevoTurno = nombre 
         else:
-            return nombre
+            nuevoTurno = "Computadora"
+        return nuevoTurno, False
         
 def generarPreguntasYMostrarlas(categoria):
     with open("preguntas.json", "r", encoding="utf-8") as archivo:
@@ -55,12 +68,44 @@ def anunciarTurno(nombre, turno):
         print(f"👤 Es tu turno, {nombre}!\n")
         
 # Comenzar a jugar (Modo Clasico)
-def modoClasico(nombre, turno):    
-    anunciarTurno(nombre, turno)
-    categoria = girarRuleta()
-    pregunta = generarPreguntasYMostrarlas(categoria)
-    turno = comprobarResultado(pregunta, turno, nombre)
-    time.sleep(2)
+def modoClasico(nombre, turno):
+    # Gestion de rondas y rachas de jugadores
+    maxRondas = 25
+    rondasJugadas = 0
+    rachaJugador = 0
+    rachaComputadora = 0
+    
+    while rondasJugadas < maxRondas:
+        anunciarTurno(nombre, turno)
+        categoria = girarRuleta()
+        pregunta = generarPreguntasYMostrarlas(categoria)
+        turno, esCorrecta = comprobarResultado(pregunta, turno, nombre, rachaJugador, rachaComputadora)
+        
+        if esCorrecta:
+            if turno == nombre:
+                rachaJugador += 1
+                rachaComputadora = 0
+                print(f"🔥 Racha de {nombre}: {rachaJugador}")
+                if rachaJugador == 3:
+                    print("👑 ¡Ganaste la corona!")
+                    rachaJugador = 0
+            else:
+                rachaComputadora += 1
+                rachaJugador = 0
+                print(f"🔥 Racha de Computadora: {rachaComputadora}")
+                if rachaComputadora == 3:
+                    print("👑 ¡La computadora ganó la corona!")
+                    rachaComputadora = 0
+        else:
+            rachaJugador = 0
+            rachaComputadora = 0
+                
+        
+        time.sleep(2)
+        
+        rondasJugadas += 1
+    print("\n🏁 ¡Se alcanzó el máximo de 25 rondas!")
+    print("🎖️ El juego ha terminado. Gracias por jugar.")
     
 # Dar bienvenida al usuario
 def darBienvenida():
