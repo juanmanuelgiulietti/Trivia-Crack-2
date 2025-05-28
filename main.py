@@ -2,6 +2,41 @@ import random
 import json
 import time
 
+def modoDesafio(nombre):
+    niveles = [5, 10, 15, 20]
+    nivel_actual = 0
+    racha = 0
+
+    print(f"\n🔥 Bienvenido al DESAFÍO, {nombre.upper()}!")
+    print("🎯 Tu objetivo: responder correctamente 5, luego 10, luego 15 y finalmente 20 preguntas ¡sin fallar!\n")
+
+    categorias = ["Arte", "Geografia", "Historia", "Deportes", "Entretenimiento", "Ciencia"]
+
+    while nivel_actual < len(niveles):
+        objetivo = niveles[nivel_actual]
+        categoria = random.choice(categorias)
+        print(f"🎯 Nivel {nivel_actual + 1}: {objetivo} respuestas correctas seguidas")
+
+        pregunta = generarPreguntasYMostrarlas(categoria)
+        esCorrecta = comprobarResultado(pregunta, nombre)
+
+        if esCorrecta:
+            racha += 1
+            print(f"🔥 Racha actual: {racha}/{objetivo}\n")
+
+            if racha == objetivo:
+                print(f"✅ ¡Completaste el Nivel {nivel_actual + 1}!\n")
+                nivel_actual += 1
+                racha = 0
+        else:
+            print("❌ Fallaste... ¡volvés al principio!\n")
+            racha = 0
+            nivel_actual = 0
+            time.sleep(1)
+
+    print(f"\n🏆 ¡{nombre.upper()}, completaste el desafío de un jugador! ¡Sos una bestia de la trivia! 🧠🎉")
+
+
 def determinarGanador(categoriasGanadasJugador, categoriasGanadasComputadora, nombre, rachaJugador, rachaComputadora, rondasJugadas):
     print("\n🎉 FIN DEL JUEGO 🎉")
     print("=" * 30)
@@ -235,5 +270,5 @@ def main():
     if jugar == 1:
         modoClasico(nombre, turno)
     else:
-        print("🔧 Modo Desafío Diario aún no está disponible.")
+        modoDesafio(nombre)
 main()
