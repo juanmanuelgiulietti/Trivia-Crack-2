@@ -2,6 +2,32 @@ import random
 import json
 import time
 
+def determinarGanador(categoriasGanadasJugador, categoriasGanadasComputadora, nombre, rachaJugador, rachaComputadora, rondasJugadas):
+    print("\n🎉 FIN DEL JUEGO 🎉")
+    print("=" * 30)
+    print("🏅 Resultados finales:")
+
+    print(f"👤 {nombre}")
+    print(f"- Categorías ganadas: {len(categoriasGanadasJugador)}")
+    print(f"- Categorías: {categoriasGanadasJugador}")
+
+    print("🤖 Computadora")
+    print(f"- Categorías ganadas: {len(categoriasGanadasComputadora)}")
+    print(f"- Categorías: {categoriasGanadasComputadora}")
+
+    if len(categoriasGanadasJugador) > len(categoriasGanadasComputadora):
+        print(f"\n🏆 ¡GANADOR: {nombre.upper()}! 🎉")
+    elif len(categoriasGanadasJugador) < len(categoriasGanadasComputadora):
+        print("\n🏆 ¡GANADOR: COMPUTADORA! 🤖") 
+    else:
+        print("\n🤝 ¡EMPATE! Ambos jugadores consiguieron la misma cantidad de coronas.")
+
+    print("\n📊 Detalles de la partida:")
+    print(f"- Rondas jugadas: {rondasJugadas}")
+    print(f"- Racha máxima de {nombre}: {rachaJugador}")
+    print(f"- Racha máxima de la computadora: {rachaComputadora}")
+    print("=" * 30)
+
 def jugarPorCorona(turno, nombre, categoriasGanadasJugador, categoriasGanadasComputadora, categorias):
     categoria = obtencionDeCorona(categorias, categoriasGanadasJugador, categoriasGanadasComputadora, turno, nombre)
     pregunta = generarPreguntasYMostrarlas(categoria)
@@ -39,8 +65,14 @@ def obtencionDeCorona(categorias, categoriasGanadasJugador, categoriasGanadasCom
         print(f"{i}. {opcion}")
 
     if turno == nombre:
-        eleccion = int(input("Ingrese el número de la categoría por la que desea jugar: "))
-        return categoriasDisponibles[eleccion - 1]
+        try:
+            eleccion = int(input("Ingrese el número de la categoría por la que desea jugar: "))
+            while eleccion < 1 or eleccion > len(categoriasDisponibles):
+                print("Número inválido.")
+                eleccion = int(input("Elija nuevamente: "))
+            return categoriasDisponibles[eleccion - 1]
+        except ValueError as e:
+            print(f"Entrada no valida: {e}")
     else:
         return random.choice(categoriasDisponibles)
 
@@ -78,6 +110,10 @@ def generarPreguntasYMostrarlas(categoria):
     for p in preguntas:
         if p["categoria"].lower() == categoria.lower():
             preguntasPorCategoria.append(p)
+    
+    if not preguntasPorCategoria:
+        print(f"⚠️ No hay preguntas disponibles para la categoría {categoria}. Elegí otra.")
+        return generarPreguntasYMostrarlas(random.choice(["Arte", "Geografia", "Historia", "Deportes", "Entretenimiento", "Ciencia"]))
 
     pregunta = random.choice(preguntasPorCategoria)
 
@@ -118,7 +154,7 @@ def anunciarTurno(nombre, turno):
     else:
         print(f"👤 Es tu turno, {nombre}!\n")
 
-def modoClasico(nombre, turno):
+def modoClasico(nombre, turno, categoriasGanadasJugador, categoriasGanadasComputadora, rachaJugador, rachaComputadora, rondasJugadas):
     maxRondas = 25
     rondasJugadas = 0
     rachaJugador = 0
@@ -129,11 +165,14 @@ def modoClasico(nombre, turno):
     while rondasJugadas < maxRondas:
         anunciarTurno(nombre, turno)
         categoria, categorias = girarRuleta()
+        if categoria == "Corona":
+            print("👑 ¡Te ha tocado jugar por una corona directamente desde la ruleta!")
+            turno = jugarPorCorona(turno, nombre, categoriasGanadasJugador, categoriasGanadasComputadora, categorias)
+            rondasJugadas += 1
+            continue
+        
         pregunta = generarPreguntasYMostrarlas(categoria)
         turno, esCorrecta = comprobarResultado(pregunta, turno, nombre)
-
-        if categoria == "Corona":
-            turno = jugarPorCorona(turno, nombre, categoriasGanadasJugador, categoriasGanadasComputadora, categorias)
 
         if esCorrecta:
             if turno == nombre:
@@ -142,7 +181,9 @@ def modoClasico(nombre, turno):
                 print(f"🔥 Racha de {nombre}: {rachaJugador}")
                 
                 if rachaJugador == 3:
-                   turno = jugarPorCorona(turno, nombre, categoriasGanadasJugador, categoriasGanadasComputadora, categorias)
+                    print("🏆 ¡Has ganado una racha de 3! Vas a jugar por una corona.")
+                    turno = jugarPorCorona(turno, nombre, categoriasGanadasJugador, categoriasGanadasComputadora, categorias)
+
             else:
                 rachaComputadora += 1
                 rachaJugador = 0
@@ -158,6 +199,7 @@ def modoClasico(nombre, turno):
         rondasJugadas += 1
 
     print("\n🏁 ¡Se alcanzó el máximo de 25 rondas!")
+    determinarGanador(categoriasGanadasJugador, categoriasGanadasComputadora, nombre, rachaJugador, rachaComputadora, rondasJugadas)
     print("🎖️ El juego ha terminado. ¡Gracias por jugar!\n")
 
 def darBienvenida():
