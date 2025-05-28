@@ -50,5 +50,455 @@
       "John Adams"
     ],
     "respuesta_correcta": "George Washington"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿En qué año cayó el Muro de Berlín?",
+    "opciones": ["1989", "1991", "1975", "1990"],
+    "respuesta_correcta": "1989"
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Cuál es el planeta más grande del sistema solar?",
+    "opciones": ["Júpiter", "Saturno", "Neptuno", "Tierra"],
+    "respuesta_correcta": "Júpiter"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿Qué país tiene forma de bota?",
+    "opciones": ["Italia", "Grecia", "España", "Portugal"],
+    "respuesta_correcta": "Italia"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Quién pintó 'La persistencia de la memoria'?",
+    "opciones": ["Dalí", "Picasso", "Monet", "Van Gogh"],
+    "respuesta_correcta": "Dalí"
+  },
+  {
+    "categoria": "Deportes",
+    "pregunta": "¿Cuántos jugadores tiene un equipo de voleibol en cancha?",
+    "opciones": ["6", "5", "7", "8"],
+    "respuesta_correcta": "6"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "pregunta": "¿Quién protagonizó la película 'Forrest Gump'?",
+    "opciones": ["Tom Hanks", "Brad Pitt", "Leonardo DiCaprio", "Matt Damon"],
+    "respuesta_correcta": "Tom Hanks"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿Qué imperio construyó el Coliseo de Roma?",
+    "opciones": [
+      "Imperio Romano",
+      "Imperio Bizantino",
+      "Imperio Persa",
+      "Imperio Otomano"
+    ],
+    "respuesta_correcta": "Imperio Romano"
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Qué tipo de animal es una ballena?",
+    "opciones": ["Mamífero", "Pez", "Reptil", "Anfibio"],
+    "respuesta_correcta": "Mamífero"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿Cuál es la capital de Australia?",
+    "opciones": ["Canberra", "Sídney", "Melbourne", "Brisbane"],
+    "respuesta_correcta": "Canberra"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Qué artista es famoso por su serie de 'latas de sopa Campbell'?",
+    "opciones": ["Andy Warhol", "Roy Lichtenstein", "Basquiat", "Pollock"],
+    "respuesta_correcta": "Andy Warhol"
+  },
+  {
+    "categoria": "Deportes",
+    "pregunta": "¿En qué deporte se utiliza una raqueta y un volante?",
+    "opciones": ["Bádminton", "Squash", "Tenis", "Pádel"],
+    "respuesta_correcta": "Bádminton"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "pregunta": "¿Qué serie tiene como personaje principal a Sheldon Cooper?",
+    "opciones": [
+      "The Big Bang Theory",
+      "Friends",
+      "How I Met Your Mother",
+      "Breaking Bad"
+    ],
+    "respuesta_correcta": "The Big Bang Theory"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿Quién fue el líder de la independencia de la India?",
+    "opciones": ["Mahatma Gandhi", "Nehru", "Mandela", "Jinnah"],
+    "respuesta_correcta": "Mahatma Gandhi"
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Cuál es la fórmula química del agua?",
+    "opciones": ["H2O", "CO2", "NaCl", "O2"],
+    "respuesta_correcta": "H2O"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿Cuál es el país más poblado del mundo?",
+    "opciones": ["India", "China", "EE.UU.", "Indonesia"],
+    "respuesta_correcta": "China"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Quién escribió 'La noche estrellada' en pintura?",
+    "opciones": ["Van Gogh", "Monet", "Renoir", "Goya"],
+    "respuesta_correcta": "Van Gogh"
+  },
+  {
+    "categoria": "Deportes",
+    "pregunta": "¿Cuántos Grand Slams ha ganado Roger Federer?",
+    "opciones": ["20", "21", "19", "22"],
+    "respuesta_correcta": "20"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "pregunta": "¿Quién es el creador del universo Marvel en cómics?",
+    "opciones": ["Stan Lee", "Bob Kane", "Alan Moore", "Jack Kirby"],
+    "respuesta_correcta": "Stan Lee"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿Cuál fue la primera civilización en usar escritura?",
+    "opciones": ["Sumerios", "Egipcios", "Griegos", "Mayas"],
+    "respuesta_correcta": "Sumerios"
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Qué órgano bombea sangre en el cuerpo humano?",
+    "opciones": ["Corazón", "Pulmón", "Hígado", "Riñón"],
+    "respuesta_correcta": "Corazón"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿Qué continente tiene más países?",
+    "opciones": ["África", "Asia", "Europa", "América"],
+    "respuesta_correcta": "África"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Qué estilo artístico es característico de Picasso?",
+    "opciones": ["Cubismo", "Impresionismo", "Surrealismo", "Realismo"],
+    "respuesta_correcta": "Cubismo"
+  },
+  {
+    "categoria": "Deportes",
+    "pregunta": "¿Qué país ganó el Mundial de Fútbol en 2014?",
+    "opciones": ["Alemania", "Brasil", "Argentina", "Francia"],
+    "respuesta_correcta": "Alemania"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "pregunta": "¿Cuál es el apellido de Harry en la saga de J.K. Rowling?",
+    "opciones": ["Potter", "Granger", "Weasley", "Dursley"],
+    "respuesta_correcta": "Potter"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿Qué guerra enfrentó a Norte y Sur en EE.UU.?",
+    "opciones": [
+      "Guerra Civil",
+      "Primera Guerra Mundial",
+      "Guerra Fría",
+      "Guerra de Vietnam"
+    ],
+    "respuesta_correcta": "Guerra Civil"
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Cómo se llama el proceso por el cual las plantas hacen su alimento?",
+    "opciones": ["Fotosíntesis", "Respiración", "Digestión", "Transpiración"],
+    "respuesta_correcta": "Fotosíntesis"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿En qué continente está Islandia?",
+    "opciones": ["Europa", "América", "Asia", "Oceanía"],
+    "respuesta_correcta": "Europa"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Qué famosa escultura representa a una mujer sin brazos?",
+    "opciones": [
+      "Venus de Milo",
+      "David",
+      "Victoria de Samotracia",
+      "La Piedad"
+    ],
+    "respuesta_correcta": "Venus de Milo"
+  },
+  {
+    "categoria": "Deportes",
+    "pregunta": "¿En qué deporte se usa el término 'strike'?",
+    "opciones": ["Béisbol", "Fútbol", "Hockey", "Cricket"],
+    "respuesta_correcta": "Béisbol"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "pregunta": "¿Qué saga tiene un anillo como elemento central?",
+    "opciones": [
+      "El Señor de los Anillos",
+      "Harry Potter",
+      "Star Wars",
+      "Narnia"
+    ],
+    "respuesta_correcta": "El Señor de los Anillos"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿Quién fue el primer emperador romano?",
+    "opciones": ["Nerón", "Tiberio", "Julio César", "Augusto"],
+    "respuesta_correcta": "Augusto"
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Qué gas es esencial para la respiración humana?",
+    "opciones": ["Oxígeno", "Dióxido de carbono", "Nitrógeno", "Hidrógeno"],
+    "respuesta_correcta": "Oxígeno"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿En qué país se encuentra la ciudad de Estambul?",
+    "opciones": ["Italia", "Rusia", "Grecia", "Turquía"],
+    "respuesta_correcta": "Turquía"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Qué pintor cortó parte de su oreja?",
+    "opciones": ["Picasso", "Monet", "Dalí", "Van Gogh"],
+    "respuesta_correcta": "Van Gogh"
+  },
+  {
+    "categoria": "Deportes",
+    "pregunta": "¿Cuál es el deporte más popular del mundo?",
+    "opciones": ["Rugby", "Fútbol", "Tenis", "Básquet"],
+    "respuesta_correcta": "Fútbol"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "pregunta": "¿Qué personaje vive en una piña debajo del mar?",
+    "opciones": ["Patricio", "Plankton", "Bob Esponja", "Calamardo"],
+    "respuesta_correcta": "Bob Esponja"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿Quién descubrió América?",
+    "opciones": ["Cristóbal Colón", "Magallanes", "Vespuccio", "Marco Polo"],
+    "respuesta_correcta": "Cristóbal Colón"
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Cuál es el elemento químico con símbolo Fe?",
+    "opciones": ["Plomo", "Hierro", "Cobre", "Oro"],
+    "respuesta_correcta": "Hierro"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿Cuál es el país más grande del mundo?",
+    "opciones": ["EE.UU.", "Rusia", "Canadá", "China"],
+    "respuesta_correcta": "Rusia"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Qué artista esculpió el David?",
+    "opciones": ["Donatello", "Bernini", "Rodin", "Miguel Ángel"],
+    "respuesta_correcta": "Miguel Ángel"
+  },
+  {
+    "categoria": "Deportes",
+    "pregunta": "¿Cuántos puntos vale un triple en básquet?",
+    "opciones": ["4", "3", "2", "1"],
+    "respuesta_correcta": "3"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "pregunta": "¿Cómo se llama el amigo humano de Shrek?",
+    "opciones": ["Lord Farquaad", "Gato con Botas", "Fiona", "Burro"],
+    "respuesta_correcta": "Burro"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿En qué año comenzó la Segunda Guerra Mundial?",
+    "opciones": ["1914", "1945", "1929", "1939"],
+    "respuesta_correcta": "1939"
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Qué animal pone huevos y es mamífero?",
+    "opciones": ["Delfín", "Erizo", "Ornitorrinco", "Murciélago"],
+    "respuesta_correcta": "Ornitorrinco"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿Qué país tiene la Torre Eiffel?",
+    "opciones": ["Francia", "Italia", "Alemania", "Reino Unido"],
+    "respuesta_correcta": "Francia"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Qué pintor español nació en Málaga?",
+    "opciones": ["Dalí", "Sorolla", "Picasso", "Goya"],
+    "respuesta_correcta": "Picasso"
+  },
+  {
+    "categoria": "Deportes",
+    "pregunta": "¿En qué deporte se usa un arco y flechas?",
+    "opciones": ["Biatlón", "Esgrima", "Jabalina", "Tiro con arco"],
+    "respuesta_correcta": "Tiro con arco"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "pregunta": "¿Qué saga incluye personajes como Yoda y Darth Vader?",
+    "opciones": ["Marvel", "Star Trek", "Star Wars", "Dune"],
+    "respuesta_correcta": "Star Wars"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿Qué civilización construyó Machu Picchu?",
+    "opciones": ["Maya", "Inca", "Olmeca", "Azteca"],
+    "respuesta_correcta": "Inca"
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Cuál es el satélite natural de la Tierra?",
+    "opciones": ["Marte", "El Sol", "Venus", "La Luna"],
+    "respuesta_correcta": "La Luna"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿Cuál es la capital de Canadá?",
+    "opciones": ["Toronto", "Ottawa", "Montreal", "Vancouver"],
+    "respuesta_correcta": "Ottawa"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Qué obra escribió Shakespeare que incluye a Hamlet?",
+    "opciones": ["Hamlet", "El rey Lear", "Otelo", "Macbeth"],
+    "respuesta_correcta": "Hamlet"
+  },
+  {
+    "categoria": "Deportes",
+    "pregunta": "¿Quién ganó el Mundial de 2018?",
+    "opciones": ["Alemania", "Francia", "Brasil", "Croacia"],
+    "respuesta_correcta": "Francia"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "pregunta": "¿En qué ciudad se sitúa 'Friends'?",
+    "opciones": ["Nueva York", "Los Ángeles", "Chicago", "San Francisco"],
+    "respuesta_correcta": "Nueva York"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿Quién fue Eva Perón?",
+    "opciones": [
+      "Actriz mexicana",
+      "Escritora",
+      "Primera dama argentina",
+      "Presidenta"
+    ],
+    "respuesta_correcta": "Primera dama argentina"
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Qué instrumento mide los terremotos?",
+    "opciones": ["Anemómetro", "Barómetro", "Termómetro", "Sismógrafo"],
+    "respuesta_correcta": "Sismógrafo"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿Qué océano baña la costa este de Argentina?",
+    "opciones": ["Índico", "Atlántico", "Pacífico", "Ártico"],
+    "respuesta_correcta": "Atlántico"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Qué instrumento usaba Beethoven?",
+    "opciones": ["Flauta", "Guitarra", "Piano", "Violín"],
+    "respuesta_correcta": "Piano"
+  },
+  {
+    "categoria": "Deportes",
+    "pregunta": "¿Quién es considerado el mejor nadador olímpico?",
+    "opciones": ["Ian Thorpe", "Mark Spitz", "Ryan Lochte", "Michael Phelps"],
+    "respuesta_correcta": "Michael Phelps"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "pregunta": "¿Qué casa lidera Jon Snow en 'Game of Thrones'?",
+    "opciones": ["Targaryen", "Stark", "Lannister", "Baratheon"],
+    "respuesta_correcta": "Stark"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿Qué país lanzó la primera bomba atómica?",
+    "opciones": ["Japón", "URSS", "EE.UU.", "Alemania"],
+    "respuesta_correcta": "EE.UU."
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Qué planeta tiene un gran anillo?",
+    "opciones": ["Neptuno", "Saturno", "Júpiter", "Urano"],
+    "respuesta_correcta": "Saturno"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿En qué país está el monte Kilimanjaro?",
+    "opciones": ["Etiopía", "Sudáfrica", "Kenia", "Tanzania"],
+    "respuesta_correcta": "Tanzania"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Qué artista pintó 'Guernica'?",
+    "opciones": ["Dalí", "Velázquez", "Picasso", "Miró"],
+    "respuesta_correcta": "Picasso"
+  },
+  {
+    "categoria": "Deportes",
+    "pregunta": "¿Qué selección ganó la Copa América 2021?",
+    "opciones": ["Chile", "Brasil", "Uruguay", "Argentina"],
+    "respuesta_correcta": "Argentina"
+  },
+  {
+    "categoria": "Entretenimiento",
+    "pregunta": "¿Cuál es el apellido del mago Harry?",
+    "opciones": ["Snape", "Dumbledore", "Weasley", "Potter"],
+    "respuesta_correcta": "Potter"
+  },
+  {
+    "categoria": "Historia",
+    "pregunta": "¿Quién lideró la Revolución Francesa?",
+    "opciones": ["Napoleón", "Voltaire", "Robespierre", "Luis XVI"],
+    "respuesta_correcta": "Robespierre"
+  },
+  {
+    "categoria": "Ciencia",
+    "pregunta": "¿Qué órgano filtra la sangre en el cuerpo?",
+    "opciones": ["Hígado", "Riñón", "Pulmón", "Estómago"],
+    "respuesta_correcta": "Riñón"
+  },
+  {
+    "categoria": "Geografia",
+    "pregunta": "¿Dónde queda el desierto del Sahara?",
+    "opciones": ["África", "Asia", "América", "Australia"],
+    "respuesta_correcta": "África"
+  },
+  {
+    "categoria": "Arte",
+    "pregunta": "¿Qué movimiento fundó Dalí?",
+    "opciones": ["Dadaísmo", "Cubismo", "Surrealismo", "Futurismo"],
+    "respuesta_correcta": "Surrealismo"
   }
 ]
